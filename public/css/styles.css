@@ -5,13 +5,14 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro";
   color: #777;
-  
 }
 html,
 body {
   margin: 0;
   padding: 0;
+  
 }
+
 .nav ul {
   margin: 0;
 }
@@ -23,13 +24,13 @@ body {
   padding: 0.5em;
   color: white;
   text-decoration: none;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5); 
-  transform: scale(1.2); 
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
 }
 .main-nav {
   text-align: center;
@@ -54,11 +55,11 @@ body {
   font-family: "IM Fell French Canon SC", serif;
   font-weight: normal;
 }
-.band-name a{
+.band-name a {
   color: white;
   text-decoration: none;
-   font-family: "IM Fell French Canon SC", serif;
-   float: left;
+  font-family: "IM Fell French Canon SC", serif;
+  float: left;
 }
 
 .band-name-large {
@@ -79,7 +80,7 @@ body {
   text-align: center;
   font-size: 2.5em;
 }
-p{
+p {
   line-height: 2rem;
 }
 .about-band-image {
@@ -90,12 +91,12 @@ p{
   border-radius: 50%;
 }
 .main-footer {
-  background-color: #56ccf2;
+  background-color: #fbb519;
   color: white;
   padding: 0.25em 0;
 }
-h3 a{
- margin-left: 5%;
+h3 a {
+  margin-left: 5%;
 }
 
 .main-footer-container ul {
@@ -115,9 +116,8 @@ h3 a{
   vertical-align: middle;
   padding: 0.67em 0.67em;
   cursor: pointer;
-  outline: 0 
+  outline: 0;
 }
- 
 
 .btn-header {
   margin: 0.5em 15% 2em 15%;
@@ -130,9 +130,9 @@ h3 a{
   padding-left: 2em;
   padding-right: 2em;
   text-decoration: none;
-  outline: 0 
+  outline: 0;
 }
-.btn-header a{
+.btn-header a {
   text-decoration: none;
   color: #fff;
 }
@@ -151,31 +151,39 @@ h3 a{
   height: 100px;
   padding: 0;
   text-align: center;
-  outline: 0 
+  outline: 0;
 }
-.btn-play:focus{
-  outline: 0 ;
+.fa {
+  color: #234103;
+  font-size: 7rem !important;
+  text-align: center;
+  position: relative;
+  bottom: 6px;
+  left: 5px;
+}
+.btn-play:focus {
+  outline: 0;
 }
 
 .btn-primary {
   color: white;
-  background-color: #56ccf2;
+  background-color: #234103;
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
   z-index: 1;
   margin-top: 5px;
-  outline: 0 
+  outline: 0;
 }
 
 .btn-primary:hover {
-  background-color: #2d9cdb;
+  background-color: #667e4d;
 }
 
 .tour-row {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .tour-row:last-child {
@@ -203,7 +211,7 @@ h3 a{
 
 .tour-btn {
   max-width: 19%;
-  outline: 0 
+  outline: 0;
 }
 
 .shop-item {
@@ -225,17 +233,14 @@ h3 a{
 }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
- 
- 
-
 
 .shop-item-details {
   display: flex; /*We want to center items vertically so that they are all within the same line*/
@@ -305,7 +310,7 @@ h3 a{
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
-  outline: 0 
+  outline: 0;
 }
 
 .btn-danger:hover {
@@ -355,7 +360,7 @@ h3 a{
   display: block; /*So that we can center buton using auto margin*/
   margin: 40px auto 80px auto;
   font-size: 1.75em;
-  outline: 0 
+  outline: 0;
 }
 .shop-item-details {
   display: flex; /*We want to center items vertically so that they are all within the same line*/
@@ -393,10 +398,6 @@ h3 a{
   display: flex;
 }
 
-.cart-item {
-  width: 45%;
-}
-
 .cart-price {
   width: 20%;
   font-size: 1.2em;
@@ -425,7 +426,7 @@ h3 a{
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
-  outline: 0 
+  outline: 0;
 }
 
 .btn-danger:hover {
@@ -471,9 +472,149 @@ h3 a{
   font-size: 1.1em;
 }
 
-.btn-purchase {
-  display: block; /*So that we can center buton using auto margin*/
-  margin: 40px auto 80px auto;
-  font-size: 1.75em;
+
+
+/* LAPTOPS*/
+@media only screen and (max-width: 1215px) {
+}
+/* TABLET*/
+@media only screen and (max-width: 1023px) {
 }
 
+/* MOBILE DEVICES */
+@media only screen and (max-width: 783px) {
+  h1.band-name {
+    font-size: 7rem;
+    margin-top: 0.4em;
+  }
+  button.btn-header {
+    font-size: 1em;
+    margin: 0.9em 15% 2em 15%;
+  }
+  button.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #234103;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    text-align: center;
+    outline: 0;
+  }
+  .fa {
+    font-size: 4rem !important;
+    bottom: 10px;
+    left: 1px;
+  }
+}
+
+/* SMALL DEVICES*/
+@media only screen and (max-width: 560px) {
+  h1.band-name {
+    font-size: 4.3em;
+    margin-top: 0.4em;
+  }
+  button.btn-header {
+    font-size: 1em;
+    margin: 0.9em 15% 2em 15%;
+  }
+  button.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #234103;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    text-align: center;
+    outline: 0;
+  }
+  .section-header {
+    font-size: 1.7em;
+  }
+  .fa {
+    font-size: 4rem !important;
+    bottom: 10px;
+    left: 1px;
+  }
+  span.tour-item {
+    font-size: 13px;
+  }
+  button.tour-btn {
+    font-size: 9px;
+  }
+  h3.band-name {
+    font-size: 2.5em;
+  }
+  .footer-nav img {
+    width: 20px;
+    height: 20px;
+    float: right;
+  }
+  .cart-row {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 441px) {
+  h1.band-name {
+    font-size: 3.8em;
+  }
+  .nav a {
+    font-size: 14px;
+  }
+  .container {
+    margin-left: 17px;
+  }
+  .main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+  }
+  span.tour-item {
+    font-size: 9px;
+  }
+  button.tour-btn {
+    font-size: 8px;
+  }
+  .section-header {
+    font-size: 1.7em;
+  }
+  h3.band-name {
+    font-size: 1.5em;
+  }
+  .footer-nav img {
+    width: 15px;
+    height: 15px;
+  }
+  .cart-row {
+    font-size: 10px;
+    padding: 0;
+  }
+  .cart-item-image {
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .cart-quantity-input {
+    height: 19px;
+    width: 35px;
+  }
+  .btn-danger {
+    padding: 0.3em 0.3em;
+    font-size: 10px;
+  }
+  .cart-item {
+  width: 35%;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.3em;
+    outline: 0;
+}
+}
