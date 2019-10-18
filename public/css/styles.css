@@ -84,6 +84,11 @@ body {
 p {
   line-height: 2rem;
 }
+.img-container{
+ display: block;
+ margin: 0 auto;
+ padding: -80px;
+}
 .about-band-image {
   float: left;
   width: 300px;
@@ -617,5 +622,12 @@ h3 a {
     margin: 40px auto 80px auto;
     font-size: 1.3em;
     outline: 0;
+}
+}
+@media only screen and (max-width: 365px) {
+  .about-band-image {
+    width: 260px;
+    height: 260px;
+    margin:0 40px 20px 0 
 }
 }
