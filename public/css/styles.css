@@ -27,7 +27,8 @@ body {
   transition: transform 0.2s;
 }
 .nav a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #fbb519;
+  /* background-color: rgba(255, 255, 255, 0.3); */
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.2);
