@@ -28,7 +28,7 @@ header h1.band-name{
     padding: 0.5em;
     color: white;
     text-decoration: none;
-    transition: transform 0.2s;
+   
   }
   .nav a:hover {
     color: #fbb519;
@@ -36,6 +36,7 @@ header h1.band-name{
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.2);
+    transition: transform .3s;
   }
   .main-nav {
     text-align: center;
@@ -49,6 +50,9 @@ header h1.band-name{
   }
   .main-header {
     background-image: url(/img/background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     padding-bottom: 5em;
   }
