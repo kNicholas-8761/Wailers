@@ -155,7 +155,7 @@ header h1.band-name{
     background-color: rgba(255, 255, 255, 0.3);
   }
   
-  .btn-play {
+  /* .btn-play {
     display: block;
     margin: 0 auto;
     color: #2d9cdb;
@@ -166,7 +166,7 @@ header h1.band-name{
     padding: 0;
     text-align: center;
     outline: 0;
-  }
+  } */
   .fa {
     color: #234103;
     font-size: 7rem !important;
