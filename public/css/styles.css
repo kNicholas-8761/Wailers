@@ -10,7 +10,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  
+  height: 100vh;
 }
 header h1.band-name{
   color: #fbb519;
@@ -108,6 +108,7 @@ header h1.band-name{
     background-color: #fbb519;
     color: white;
     padding: 0.25em 0;
+    width: 100%;
   }
   h3 a {
     margin-left: 5%;
@@ -154,19 +155,6 @@ header h1.band-name{
   .btn-header:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
-  
-  /* .btn-play {
-    display: block;
-    margin: 0 auto;
-    color: #2d9cdb;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    text-align: center;
-    outline: 0;
-  } */
   .fa {
     color: #234103;
     font-size: 7rem !important;
@@ -492,14 +480,20 @@ header h1.band-name{
   @media only screen and (max-width: 1215px) {
   }
   /* TABLET*/
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+     .main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   }
   
   /* MOBILE DEVICES */
-  @media only screen and (max-width: 783px) {
+  @media only screen and (max-width: 768px) {
     h1.band-name {
       font-size: 7rem;
       margin-top: 0.4em;
+     
     }
     button.btn-header {
       font-size: 1em;
@@ -522,6 +516,7 @@ header h1.band-name{
       bottom: 10px;
       left: 1px;
     }
+    
   }
   
   /* SMALL DEVICES*/
